@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleview1</title>
+    <style>
+        /*==========GRID SETUP START==========*/
+
+        body {
+
+            margin: 0, auto;
+        }
+
+
+        #overskrift,
+        nav {
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        /*==========GRID SETUP START==========*/
+
+        .menutemplate,
+        .menukort {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            width: 100%;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .menustyling {
+            border: 1px solid black;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menustyling:nth-child(odd) {
+            background: green;
+        }
+
+
+        /* eller brug dette .person:nth-child(3n+1){
+            grid-column: span 2;
+            background: #ccc;
+        }*/
+
+        /*nth-child er ved at tjekke ud.*/
+
+        @media only screen and (max-width: 480px) {
+            .menutemplate,
+            .menukort {
+                grid-template-columns: repeat(1, 1fr);
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 481px) {
+            .menutemplate,
+            .menukort {
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 780px) {
+            .menutemplate,
+            .menukort {
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+            }
+        }
+
+        /*==========GRID SETUP SLUT==========*/
+    </style>
+</head>
+
+<body>
+
+    <!--KNAPPER TIL FILTER START-->
+    <nav>
+        <p>
+            Welcome to Russian Buffet!
+        </p>
+        <a href="forside.html?kategori=alle">
+            <button id="filter-alle">Alle</button>
+        </a>
+        <a href="filter.html?kategori=forretter">
+        <button id="filter-forretter">Forretter</button>
+        </a>
+        <a href="filter.html?kategori=hovedretter">
+        <button id="filter-hovedretter">Hovedretter</button>
+        </a>
+        <a href="filter.html?kategori=desserter">
+        <button id="filter-desserter">Desserter</button>
+        </a>
+        <a href="filter.html?kategori=drikkevarer">
+        <button id="filter-drikkevarer">Drikkevarer</button>
+        </a>
+    </nav>
+    <!--KNAPPER TIL FILTER SLUT-->
+    <main>
+        <h1 id="overskrift" data-overskrift>
+            Velkommen
+        </h1>
+
+    </main>
+
+    <div class="menukort" data-menukort>
+        <div class="menustyling" data-menustyling>
+            <img class="billede" data-billede src="" alt="">
+            <h1 class="navn" data-navn></h1>
+            <h2 class="oprindelsesregion" data-oprindelsesregion></h2>
+            <h3 class="kortbeskrivelse" data-kortbeskrivelse></h3>
+            <p class="langbeskrivelse" data-langbeskrivelse></p>
+            <p class="pris" data.pris></p>
+        </div>
+    </div>
+
+
+    <script>
+        let id = location.href.split("=")[1];
+        let menu = [];
+
+        let dest = document.querySelector(".menukort");
+
+        document.addEventListener("DOMContentLoaded", loadJson);
+
+        async function loadJson() {
+
+
+            let minListe = await fetch("menu.json");
+            menu = await minListe.json();
+            visMenu();
+        }
+
+        function visMenu() {
+            console.log(menu);
+            menu.forEach(event => {
+                if (event.id == id) {
+                    dest.querySelector("[data-billede]").src = "imgs/medium/" + event.billede + "-md.jpg";
+                    dest.querySelector("[data-billede]").alt = "billede af " + event.navn;
+                    dest.querySelector("[data-navn]").textContent = event.navn;
+                    dest.querySelector("[data-oprindelsesregion]").textContent = event.oprindelsesregion;
+                    dest.querySelector("[data-kortbeskrivelse]").textContent = event.kortbeskrivelse;
+                    dest.querySelector("[data-pris]").textContent = "Pris:  " + event.pris + " kr.";
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
