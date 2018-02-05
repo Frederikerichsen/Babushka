@@ -1,0 +1,73 @@
+/*==========GRID SETUP START==========*/
+
+body {
+
+    margin: 0, auto;
+}
+
+
+#overskrift,
+nav {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/*==========GRID SETUP START==========*/
+
+.menutemplate,
+.menukort {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.menustyling {
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.menustyling:nth-child(odd) {
+    background: green;
+}
+
+
+/* eller brug dette .person:nth-child(3n+1){
+            grid-column: span 2;
+            background: #ccc;
+        }*/
+
+/*nth-child er ved at tjekke ud.*/
+
+@media only screen and (max-width: 480px) {
+    .menutemplate,
+    .menukort {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .menutemplate,
+    .menukort {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .menutemplate,
+    .menukort {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
+
+/*==========GRID SETUP SLUT==========*/
