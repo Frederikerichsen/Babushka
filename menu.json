@@ -1,7 +1,7 @@
 [
     {
         "id": 10,
-        "kategori": "forretter",
+        "kategori": "Forretter",
         "navn": "Russisk ringbrød",
         "pris": 29,
         "kortbeskrivelse": "Russisk ringbrød af Karapatisk mel",
@@ -11,7 +11,7 @@
 },
     {
         "id": 12,
-        "kategori": "forretter",
+        "kategori": "Forretter",
         "navn": "Cabanossi med rødbedecreme",
         "pris": 49,
         "kortbeskrivelse": "Cabanossi med rødbedecreme og løg",
@@ -21,7 +21,7 @@
 },
     {
         "id": 14,
-        "kategori": "forretter",
+        "kategori": "Forretter",
         "navn": "Caviar bruschetta",
         "pris": 49,
         "kortbeskrivelse": "Brushcetta med russisk Caviar",
@@ -31,7 +31,7 @@
   },
     {
         "id": 17,
-        "kategori": "forretter",
+        "kategori": "Forretter",
         "navn": "Baltisk bondesuppe",
         "pris": 79,
         "kortbeskrivelse": "Baltisk bondesuppe - en solid starter",
@@ -41,7 +41,7 @@
   },
     {
         "id": 19,
-        "kategori": "forretter",
+        "kategori": "Forretter",
         "navn": "Østsibirisk kålsuppe",
         "pris": 69,
         "kortbeskrivelse": "Kålsuppe med 7 kålvarianter",
@@ -51,7 +51,7 @@
   },
     {
         "id": 2,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Bulgarsk bondesuppe",
         "pris": 99,
         "kortbeskrivelse": "Cauceskus bulgarske bondesuppe",
@@ -61,7 +61,7 @@
   },
     {
         "id": 21,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Kæmperogn med kartoffelmos",
         "pris": 89,
         "kortbeskrivelse": "Kæmpe klipfiskerogn med Kartofler og fiskefond",
@@ -71,7 +71,7 @@
   },
     {
         "id": 25,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Diplomat-bøf med grønt",
         "pris": 179,
         "kortbeskrivelse": "Diplomat-bøf med grønt",
@@ -81,7 +81,7 @@
   },
     {
         "id": 34,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Zygroffs bondeplatte",
         "pris": 109,
         "kortbeskrivelse": "Zygroffs bondeplatte - bøndernes svar på Tapas",
@@ -91,7 +91,7 @@
   },
     {
         "id": 36,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "relaterede": 60,
         "navn": "Russisk Tapas",
         "pris": 199,
@@ -102,7 +102,7 @@
 },
     {
         "id": 38,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Moldavisk fiskesuppe",
         "pris": 139,
         "kortbeskrivelse": "Den dejlige, alkoholholdige moldaviske fiskesuppe",
@@ -112,7 +112,7 @@
 },
     {
         "id": 41,
-        "kategori": "hovedretter",
+        "kategori": "Hovedretter",
         "navn": "Dynryp",
         "pris": 149,
         "kortbeskrivelse": "Dynrup - Russisk bulgur med skovsvampe",
@@ -122,7 +122,7 @@
 },
     {
         "id": 42,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Pandekager med kaviar",
         "pris": 79,
         "kortbeskrivelse": "Brændte pandekager med Bordyriske ørne-kaviar",
@@ -132,7 +132,7 @@
 },
     {
         "id": 43,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Guzni",
         "pris": 69,
         "kortbeskrivelse": "Guzni - Rødbede/nøddeis ",
@@ -142,7 +142,7 @@
 },
     {
         "id": 44,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Kirgisisk roulade",
         "pris": 89,
         "kortbeskrivelse": "Kirgisisk roulade bestående af nødder og rødkål",
@@ -152,7 +152,7 @@
 },
     {
         "id": 45,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Pavlova i melon",
         "pris": 49,
         "kortbeskrivelse": "Pavlova - russiske pandekager - i honningmelon fra Nordkorea",
@@ -162,7 +162,7 @@
 },
     {
         "id": 52,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Groggiroshorn",
         "pris": 39,
         "kortbeskrivelse": "Groggishorn - det russiske svar på pølsehorn",
@@ -172,7 +172,7 @@
 },
     {
         "id": 54,
-        "kategori": "desserter",
+        "kategori": "Desserter",
         "navn": "Søde, syltede løg",
         "pris": 59,
         "kortbeskrivelse": "En lækker potpourri af søde, syltede løg",
@@ -182,7 +182,7 @@
 },
     {
         "id": 55,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Bochkarev fadøl",
         "pris": 55,
         "kortbeskrivelse": "En halv liter Bochkarev fadøl",
@@ -192,7 +192,7 @@
 },
     {
         "id": 60,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Voda-vodka",
         "pris": 19,
         "kortbeskrivelse": "Voda-vodka - vodka i rigelige mængder",
@@ -202,7 +202,7 @@
 },
     {
         "id": 62,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Gloske (cola)",
         "pris": 39,
         "kortbeskrivelse": "Gloske - russisk for Cola - fra bryggeriet Iznogoud",
@@ -212,7 +212,7 @@
 },
     {
         "id": 65,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Rødvin, glas",
         "pris": 49,
         "kortbeskrivelse": "Et glas god Rødvin fra det tidligere USSR",
@@ -222,7 +222,7 @@
 },
     {
         "id": 76,
-        "kategori": "drikkevarer",
+        "kategori": "Drikkevarer",
         "navn": "Hvidvin, glas",
         "pris": 39,
         "kortbeskrivelse": "Et glas russisk hvidvin fra Chernobyl",
