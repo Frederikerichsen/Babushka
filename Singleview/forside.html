@@ -34,8 +34,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
             width: 100%;
-            grid-auto-rows: minmax(100px, auto);
-        }
+ grid-auto-rows: minmax(100px, auto);        }
 
         .menustyling {
             border: 1px solid black;
@@ -91,7 +90,7 @@
         <p>
             Welcome to Russian Buffet!
         </p>
-        <a href="filter.html?kategori=alle">
+        <a href="forside.html?kategori=alle">
             <button id="filter-alle">Alle</button>
         </a>
         <a href="filter.html?kategori=forretter">
@@ -154,6 +153,7 @@
 
                 /*==========Indhold af ARRAY==========*/
                 console.log(klon.querySelector("[data-single]"))
+
                 klon.querySelector("[data-single]").href = "single.html?id=" + event.id;
 
                 klon.querySelector(".billede").src = "imgs/small/" + event.billede + "-sm.jpg";
