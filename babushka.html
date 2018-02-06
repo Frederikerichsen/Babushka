@@ -12,26 +12,36 @@
 </head>
 
 <body>
+    <!--POP UP START-->
+    <div class="popup">
+        <div class="popup-content">
+            <button class="closepopup">Close</button>
+            <h2 class="single-titel" data-navn>test</h2>
+            <img src="" alt="" class="single-img" data-billede>
+            <details open>
+                <summary>Beskrivelse</summary>
+                <p data-langbeskrivelse>Her Står noget tekst</p>
+            </details>
+        </div>
+    </div>
+    <!--POP UP SLUT-->
 
     <!--KNAPPER TIL FILTER START-->
     <nav>
         <p>
-            Welcome to Russian Buffet!
+            Welcome to Russian (wife) Buffet!
         </p>
-
         <button id="filter-alle">Alle</button>
         <button id="filter-forretter">Forretter</button>
         <button id="filter-hovedretter">Hovedretter</button>
         <button id="filter-desserter">Desserter</button>
         <button id="filter-drikkevarer">Drikkevarer</button>
-
     </nav>
     <!--KNAPPER TIL FILTER SLUT-->
 
 
     <main>
         <h1 id="overskrift" data-overskrift>
-            Velkommen
         </h1>
 
     </main>
@@ -39,14 +49,14 @@
     <div class="menukort" data-menukort></div>
 
     <template class="menutemplate" data-menutemplate>
-    <div class="menustyling" data-menustyling>
+    <article class="ret" data-ret>
     <img class="billede" data-billede src = "" alt="">
     <h1 class="navn" data-navn></h1>
     <h2 class="oprindelsesregion" data-oprindelsesregion></h2>
     <h3 class="kortbeskrivelse" data-kortbeskrivelse></h3>
     <p class="langbeskrivelse" data-langbeskrivelse></p>
     <p class="pris" data-pris></p>
-  </div>
+  </article>
 </template>
 
 

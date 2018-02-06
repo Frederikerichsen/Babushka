@@ -1,8 +1,8 @@
-/*==========GRID SETUP START==========*/
+/*==========GENERAL SETUP START==========*/
 
 body {
 
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 
@@ -16,6 +16,30 @@ nav {
 
 }
 
+/*==========POPUP START==========*/
+
+.popup {
+
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    cursor: default;
+    background-color: rgba(10, 10, 10, 0.80);
+}
+
+.single-img {
+    width: 50%;
+}
+
+.popup-content {
+    text-align: center;
+    justify-items: center;
+    color: #f1f1f1;
+}
+
+/*==========POPUP SLUT==========*/
+
 /*==========GRID SETUP START==========*/
 
 .menutemplate,
@@ -27,14 +51,14 @@ nav {
     grid-auto-rows: minmax(100px, auto);
 }
 
-.menustyling {
+.ret {
     border: 1px solid black;
     padding: 10px;
     justify-content: center;
     text-align: center;
 }
 
-.menustyling:nth-child(odd) {
+.ret:nth-child(odd) {
     background: green;
 }
 
