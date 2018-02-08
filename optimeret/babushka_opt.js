@@ -7,6 +7,17 @@ document.addEventListener("DOMContentLoaded", loadJson);
 async function loadJson() {
     let minListe = await fetch("menu.json");
     menu = await minListe.json();
+    //find tekst på klikket knap
+    document.querySelector("nav").addEventListener("click", () => {
+
+        console.log(event.taget.textContent);
+
+    })
+
+
+
+
+
     //Her defineres de forskellige kategorier og der tilføjes filter funktion
     let forretter = menu.filter(ret => ret.kategori == "forretter");
     let hovedretter = menu.filter(ret => ret.kategori == "hovedretter");
