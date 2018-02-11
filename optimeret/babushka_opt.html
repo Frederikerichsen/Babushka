@@ -13,14 +13,35 @@
 <body>
 
     <!--KNAPPER TIL FILTER START-->
-    <nav>
 
+    <!--    DROPDOWN MENU START-->
+    <div id="menu">
+        <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+    </div>
+    <!--    DROPDOWN MENU SLUT-->
+
+    <nav>
+        <h2 class="justify">
+            Welcome to Russian Buffet - Bistro BABUSHKA!
+        </h2>
         <button id="filter-alle">Alle</button>
         <button id="filter-forretter">Forretter</button>
         <button id="filter-hovedretter">Hovedretter</button>
         <button id="filter-desserter">Desserter</button>
         <button id="filter-drikkevarer">Drikkevarer</button>
+        <button id="filter-sideorders">Side Orders</button>
     </nav>
+    <!--KNAPPER TIL SORTERING START-->
+    <div class="sortering">
+        <button class="alfa markeret">Alfabetisk</button>
+        <button class="prisop">Pris høj</button>
+        <button class="prisned">Pris lav</button>
+    </div>
+    <!--KNAPPER TIL SORTERING SLUT-->
     <!--KNAPPER TIL FILTER SLUT-->
 
     <!--POP UP START-->
@@ -29,11 +50,14 @@
             <div class="popup-content">
                 <button class="closepopup">Close</button>
                 <h2 class="single-titel" data-navn>test</h2>
-                <img src="" alt="" class="single-img" data-billede>
-                <details open>
-                    <summary>Beskrivelse af ret</summary>
-                    <p data-langbeskrivelse>Her Står noget tekst</p>
-                </details>
+                <div class="single-info">
+                    <img src="" alt="" class="single-img" data-billede>
+                    <details open>
+                        <summary>Beskrivelse af ret</summary>
+                        <p data-langbeskrivelse>Her Står noget tekst</p>
+                    </details>
+
+                </div>
             </div>
         </div>
     </section>
@@ -45,7 +69,7 @@
         </h1>
     </main>
     <!--CONTENT START-->
-    <section id="menukort">
+    <section id="menukortsectionF">
         <div class="menukort" data-menukort></div>
         <template class="menutemplate" data-menutemplate>
             <article class="ret" data-ret>

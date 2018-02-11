@@ -232,7 +232,7 @@
     },
     {
         "id": 77,
-        "kategori": "sideorders",
+        "kategori": "side orders",
         "navn": "Russisk ringbrød",
         "pris": 29,
         "kortbeskrivelse": "Russisk ringbrød bagt med det fineste gryzni-mel fra Gryzkigistan",
@@ -242,7 +242,7 @@
 },
     {
         "id": 78,
-        "kategori": "sideorders",
+        "kategori": "side orders",
         "navn": "Murmanske bondeboller",
         "pris": 19,
         "kortbeskrivelse": "Murmanske bondeboller bagt i stenovn",
@@ -252,7 +252,7 @@
 },
     {
         "id": 79,
-        "kategori": "sideorders",
+        "kategori": "side orders",
         "navn": "Russisk salat",
         "pris": 49,
         "kortbeskrivelse": "Russisk salat med ærter, bønner, gulerødder og mayonnaise fra Volgograd",
@@ -262,7 +262,7 @@
 },
     {
         "id": 80,
-        "kategori": "sideorders",
+        "kategori": "side orders",
         "navn": "Kogte kartofler",
         "pris": 29,
         "kortbeskrivelse": "Kogte kartofler med Murmanske krydderurter",

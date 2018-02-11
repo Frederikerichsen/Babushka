@@ -1,19 +1,16 @@
 /*==========GENERAL SETUP START==========*/
 
 body {
-
     margin: 0 auto;
 }
 
 
+
 main,
 nav {
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
     justify-items: center;
-    justify-content: center;
     text-align: center;
-
+    margin-top: 100px;
 }
 
 /*==========GRID SETUP START==========*/
@@ -95,3 +92,125 @@ nav {
 }
 
 /*==========POPUP SLUT==========*/
+
+/*==========SINGLESITE GRID START==========*/
+
+/*@media screen and (min-width:1001px) {
+
+    main,
+    navm footer section {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    button {
+        font-size: 1em;
+        display: inline-block;
+    }
+    .menutemplate {
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .popup-content {
+        padding: 10px;
+    }
+    .info {
+        padding: 0;
+    }
+    .single-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}*/
+
+/*==========SINGLESITE GRID SLUT==========*/
+
+/*==========OVERSKRIFT START==========*/
+
+#overskrift::first-letter {
+    text-transform: uppercase;
+}
+
+#overskrifter {
+    border-bottom: 2px solid: #000;
+    margin: 10px 0;
+}
+
+.justify {
+    justify-items: center;
+    text-align: center;
+}
+
+/*==========OVERSKRIFT SLUT==========*/
+
+/*==========SORTERING START==========*/
+
+.markeret {
+    background-color: indianred;
+    color: #f1f1f1;
+}
+
+.sortering {
+    justify-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*==========SORTERING SLUT==========*/
+
+/*==========BURGER MENU START==========*/
+
+.burger {
+    cursor: url(cursor/Russia_Busy1.ani), default;
+    cursor: url(cursor/Russia_LinkSelect.cur), auto;
+    background: #f1f1f1;
+    border: none;
+    text-align: center;
+    justify-items: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+nav {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+
+nav.show {
+    max-height: 500px;
+}
+
+.sortering {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+
+.sortering.show {
+    max-height: 500px;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg)translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg)translate(-8px, -8px);
+}
+
+
+/*==========BURGER MENU SLUT==========*/
